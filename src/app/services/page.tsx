@@ -64,7 +64,7 @@ export default function ServicesPage() {
                 imageSrc="/service_power_bi.png"
                 /* Using existing image as fallback since generation failed */
                 imageAlt="Power BI Dashboard"
-                isReversed={true}
+                reversed={true}
                 icon={
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
