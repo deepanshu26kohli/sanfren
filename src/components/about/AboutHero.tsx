@@ -23,7 +23,7 @@ const AboutHero = () => {
                             enterprise delivery expectations.
                         </p>
                     </div>
-                    <div className="lg:w-1/2 relative h-[400px]">
+                    <div className="lg:w-1/2 relative w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[400px]">
                         <div className="relative rounded-2xl overflow-hidden shadow-xl w-full h-full">
                             <Image
                                 src="/about_team_collaboration.png"
