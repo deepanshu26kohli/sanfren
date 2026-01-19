@@ -7,11 +7,11 @@ export default function ContactPage() {
     return (
         <div className="flex flex-col">
             <ContactHero
-                title="Contact Us"
-                description="Get in touch with SanFren Tech for inquiries about our services, partnerships, or general questions."
+                title="Schedule a Consultation"
+                description="Let's discuss how SanFren Tech can help transform your business with modern web applications and insightful dashboards."
             />
 
-            <section className="bg-white pb-20">
+            <section className="bg-white mt-12 pb-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
                         {/* Form Side */}

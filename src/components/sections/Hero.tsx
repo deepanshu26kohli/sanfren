@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero = () => {
     return (
-        <section className="bg-white pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
+        <section className="bg-gradient-to-br from-blue-50 via-white to-blue-50 pt-16 pb-20 lg:pt-16 lg:pb-32 overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
                     <div className="lg:w-1/2 text-left">

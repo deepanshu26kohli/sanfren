@@ -10,8 +10,10 @@ const Footer = () => {
                     <div className="md:col-span-5 lg:col-span-5">
                         <Link href="/" className="flex items-center gap-2 mb-6">
                             <div className="text-[#0078D4]">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
-                                    <path d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z" />
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
+                                    <path d="M12 2l9 4.9V17l-9 4.9-9-4.9V6.9L12 2z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                    <circle cx="12" cy="12" r="1" fill="currentColor" stroke="none" />
                                 </svg>
                             </div>
                             <span className="text-2xl font-bold text-[#0078D4] tracking-tight">

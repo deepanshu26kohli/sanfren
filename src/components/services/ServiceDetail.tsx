@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 
@@ -24,6 +26,12 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({
     icon,
     reversed = false,
 }) => {
+    const [expandedIndex, setExpandedIndex] = React.useState<number | null>(null);
+
+    const toggleAccordion = (index: number) => {
+        setExpandedIndex(expandedIndex === index ? null : index);
+    };
+
     return (
         <section className="bg-white py-16 lg:py-24 overflow-hidden border-t border-gray-100 last:border-b-0">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -49,24 +57,36 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({
                                 {capabilities.map((cap, index) => (
                                     <div
                                         key={index}
-                                        className="flex justify-between items-center py-3 border-b border-gray-100 last:border-0 group cursor-pointer"
+                                        className="border-b border-gray-100 last:border-0"
                                     >
-                                        <span className="text-gray-700 font-medium group-hover:text-[#0078D4] transition-colors">
-                                            {cap.title}
-                                        </span>
-                                        <svg
-                                            className="w-5 h-5 text-gray-400 group-hover:text-[#0078D4] transition-colors"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            strokeWidth={1.5}
-                                            stroke="currentColor"
+                                        <div
+                                            className="flex justify-between items-center py-3 group cursor-pointer"
+                                            onClick={() => toggleAccordion(index)}
                                         >
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                                            />
-                                        </svg>
+                                            <span className={`font-medium transition-colors ${expandedIndex === index ? "text-[#0078D4]" : "text-gray-700 group-hover:text-[#0078D4]"}`}>
+                                                {cap.title}
+                                            </span>
+                                            <svg
+                                                className={`w-5 h-5 transition-transform duration-300 ${expandedIndex === index ? "text-[#0078D4] rotate-180" : "text-gray-400 group-hover:text-[#0078D4]"}`}
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                                strokeWidth={1.5}
+                                                stroke="currentColor"
+                                            >
+                                                <path
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                                                />
+                                            </svg>
+                                        </div>
+                                        <div
+                                            className={`overflow-hidden transition-all duration-300 ${expandedIndex === index ? "max-h-40 pb-4" : "max-h-0"}`}
+                                        >
+                                            <p className="text-gray-600 text-sm leading-relaxed">
+                                                {cap.title}
+                                            </p>
+                                        </div>
                                     </div>
                                 ))}
                             </div>

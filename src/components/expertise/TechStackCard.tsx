@@ -14,7 +14,7 @@ const TechStackCard: React.FC<TechStackCardProps> = ({
     icon,
 }) => {
     return (
-        <div className="bg-[#F0F8FF] rounded-2xl overflow-hidden border border-blue-50 shadow-sm mb-12 last:mb-0">
+        <div className="bg-[#F0F8FF] rounded-2xl overflow-hidden border border-blue-50 shadow-sm my-12 last:mb-0">
             <div className="flex flex-col md:flex-row">
                 {/* Left Side: Icon & Title */}
                 <div className="md:w-1/3 p-10 flex flex-col items-center justify-center text-center bg-white border-b md:border-b-0 md:border-r border-blue-50">

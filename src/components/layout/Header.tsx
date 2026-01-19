@@ -71,7 +71,7 @@ const Header = () => {
                     {/* CTA Button */}
                     <div className="hidden lg:flex items-center ml-8">
                         <Link
-                            href="/consultation"
+                            href="/contact"
                             className="bg-[#0078D4] hover:bg-[#0063b1] text-white px-6 py-2.5 rounded font-semibold transition-colors"
                         >
                             Schedule Consultation
@@ -131,7 +131,7 @@ const Header = () => {
                         ))}
                         <div className="pt-4 mt-4 border-t border-gray-100">
                             <Link
-                                href="/consultation"
+                                href="/contact"
                                 className="block w-full text-center bg-[#0078D4] hover:bg-[#0063b1] text-white px-5 py-3 rounded font-semibold transition-colors"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >

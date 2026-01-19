@@ -3,7 +3,7 @@ import React from "react";
 
 const CTA = () => {
     return (
-        <section className="bg-[#0091FF] py-20 text-center">
+        <section className="bg-gradient-to-r from-[#0078D4] to-[#00A4EF] py-20 text-center">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                     Ready to Transform Your Business?
@@ -12,7 +12,7 @@ const CTA = () => {
                     Let&apos;s discuss how we can help you build scalable web applications and insightful dashboards
                 </p>
                 <Link
-                    href="/consultation"
+                    href="/contact"
                     className="bg-white text-[#0091FF] font-semibold py-3.5 px-8 rounded-md transition-colors inline-flex items-center hover:bg-gray-50 uppercase tracking-wide text-sm"
                 >
                     Schedule Consultation
